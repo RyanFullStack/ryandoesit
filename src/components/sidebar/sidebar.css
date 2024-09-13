@@ -38,7 +38,7 @@
     display: none;
     position: fixed;
     left: 10px;
-    top: 10px;
+    top: 1rem;
     cursor: pointer;
 }
 
