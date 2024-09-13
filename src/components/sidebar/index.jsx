@@ -13,6 +13,7 @@ function Sidebar() {
             <li>Music</li>
             <li>Video</li>
             <li>Audio</li>
+            <li>Voiceovers</li>
             <li>Manufacturing</li>
         </ul>
     </div>
