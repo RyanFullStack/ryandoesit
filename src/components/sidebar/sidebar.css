@@ -8,7 +8,7 @@
     top: 0;
     bottom: 0;
     transition: transform 0.3s ease;
-    background-color: #131313;
+    background-color: #0f0f0f;
     /* border: 1px solid red; */
 }
 
@@ -18,19 +18,20 @@
 }
 
 .sidebar-item {
-    padding: 1rem 1rem;
+    margin: 0 .8rem;
+    padding: .8rem 1rem;
     border-radius: 10px;
 }
 
 .sidebar-item:hover {
-    background-color: black;
+    background-color: rgb(31, 31, 31);
     cursor: pointer;
     transition-property: background-color;
     transition-duration: .3s;
 }
 
 .sidebar-item.active {
-    background-color: black;
+    background-color: rgb(31, 31, 31)
 }
 
 .sidebar-toggle {
@@ -43,14 +44,14 @@
 
 @media (max-width: 600px) {
     .sidebar-content {
-        width: 200px; /* Adjust as needed */
+        width: 200px;
     }
 
     .sidebar-content.hidden {
-        transform: translateX(-200px); /* Matches the sidebar width */
+        transform: translateX(-200px);
     }
 
     .sidebar-toggle {
-        display: block; /* Show toggle icon on small screens */
+        display: flex;
     }
 }
