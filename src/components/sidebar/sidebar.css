@@ -21,6 +21,6 @@
     transition-duration: .3s;
 }
 
-.active {
+.sidebar-item.active {
     background-color: black;
 }
