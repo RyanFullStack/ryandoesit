@@ -4,17 +4,17 @@
     text-align: center;
 }
 
-ul {
-    list-style-type: none;
+.sidebar-list {
     padding: 0;
     margin: 1rem 0;
 }
-li {
+
+.sidebar-item {
     padding: 1rem 1rem;
     border-radius: 10px;
 }
 
-li:hover {
+.sidebar-item:hover {
     background-color: black;
     cursor: pointer;
     transition-property: background-color;
