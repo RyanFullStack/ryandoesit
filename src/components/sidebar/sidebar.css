@@ -1,4 +1,10 @@
 .sidebar-content {
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
