@@ -8,8 +8,20 @@ function Sidebar() {
         <h1>Ryan Does It</h1>
         <hr></hr>
         <div className='sidebar-list'>
-            <NavLink to='/'><div className='sidebar-item'>Home</div></NavLink>
-            <NavLink to='/games'><div className='sidebar-item'>Games</div></NavLink>
+            <NavLink to="/">
+                {({ isActive }) => (
+                    <div className={`sidebar-item ${isActive ? 'active' : ''}`}>
+                        Home
+                    </div>
+                )}
+            </NavLink>
+            <NavLink to="/games">
+                {({ isActive }) => (
+                    <div className={`sidebar-item ${isActive ? 'active' : ''}`}>
+                        Games
+                    </div>
+                )}
+            </NavLink>
             <div className='sidebar-item'>Software</div>
             <div className='sidebar-item'>Music</div>
             <div className='sidebar-item'>Video</div>
