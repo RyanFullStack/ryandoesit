@@ -1,10 +1,16 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom'
 import './sidebar.css'
 
 function Sidebar() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setIsOpen(!isOpen);
+    }
 
 
-    return <div className="sidebar-content">
+    return <><div className={`sidebar-content ${isOpen ? '' : 'hidden'}`}>
         <h1>Ryan Does It</h1>
         <hr></hr>
         <div className='sidebar-list'>
@@ -30,6 +36,10 @@ function Sidebar() {
             <div className='sidebar-item'>Manufacturing</div>
         </div>
     </div>
+    <div className="sidebar-toggle" onClick={toggleSidebar}>
+    <i className='fas fa-bars' />
+</div>
+</>
 }
 
 export default Sidebar;

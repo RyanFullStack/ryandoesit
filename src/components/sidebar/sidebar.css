@@ -2,6 +2,14 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    min-width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: transform 0.3s ease;
+    background-color: #131313;
+    /* border: 1px solid red; */
 }
 
 .sidebar-list {
@@ -23,4 +31,26 @@
 
 .sidebar-item.active {
     background-color: black;
+}
+
+.sidebar-toggle {
+    display: none;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .sidebar-content {
+        width: 200px; /* Adjust as needed */
+    }
+
+    .sidebar-content.hidden {
+        transform: translateX(-200px); /* Matches the sidebar width */
+    }
+
+    .sidebar-toggle {
+        display: block; /* Show toggle icon on small screens */
+    }
 }

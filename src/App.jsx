@@ -9,17 +9,13 @@ function App() {
   return (
     <Router>
       <div className='page'>
-        <div className='sidebar'>
-          <Sidebar />
+        <Sidebar />
+        <div className="main">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="games" element={<Games />} />
+          </Routes>
         </div>
-        <Routes>
-          <Route path="/" element={<div className='main'>
-            <Home />
-          </div>} />
-          <Route path="games" element={<div className='main'>
-            <Games />
-          </div>} />
-        </Routes>
       </div>
     </Router>
   )

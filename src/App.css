@@ -8,13 +8,9 @@
   height: 100vh;
 }
 
-.sidebar {
-  min-width: 200px;
-  /* border: 1px solid red; */
-}
-
 .main {
   width: 100%;
+  margin-left: 200px;
   padding: 0 1rem;
   /* border: 1px solid blue; */
 }
@@ -26,4 +22,12 @@ a {
 
 a:hover {
   color: inherit;
+}
+
+@media screen and (max-width:600px) {
+  .main {
+    margin-left: 0;
+    transition-property: margin-left;
+    transition-duration: .3s;
+  }
 }
