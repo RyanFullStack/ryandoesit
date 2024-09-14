@@ -55,8 +55,8 @@ function Sidebar() {
                     <div className='sidebar-item'>Music</div>
                     <div className='sidebar-item'>Video</div>
                     <div className='sidebar-item'>Audio</div>
-                    <div className='sidebar-item'>Voiceovers</div>
-                    <div className='sidebar-item'>Manufacturing</div>
+                    <div className='sidebar-item'>Voiceover</div>
+                    <div className='sidebar-item'>Contact</div>
                 </div>
             </div>
             <div
