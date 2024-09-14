@@ -51,12 +51,48 @@ function Sidebar() {
                             </div>
                         )}
                     </NavLink>
-                    <div className='sidebar-item'>Software</div>
-                    <div className='sidebar-item'>Music</div>
-                    <div className='sidebar-item'>Video</div>
-                    <div className='sidebar-item'>Audio</div>
-                    <div className='sidebar-item'>Voiceover</div>
-                    <div className='sidebar-item'>Contact</div>
+                    <NavLink to="/software">
+                        {({ isActive }) => (
+                            <div className={`sidebar-item ${isActive ? 'active' : ''}`}>
+                                Software
+                            </div>
+                        )}
+                    </NavLink>
+                    <NavLink to="/music">
+                        {({ isActive }) => (
+                            <div className={`sidebar-item ${isActive ? 'active' : ''}`}>
+                                Music
+                            </div>
+                        )}
+                    </NavLink>
+                    <NavLink to="/video">
+                        {({ isActive }) => (
+                            <div className={`sidebar-item ${isActive ? 'active' : ''}`}>
+                                Video
+                            </div>
+                        )}
+                    </NavLink>
+                    <NavLink to="/audio">
+                        {({ isActive }) => (
+                            <div className={`sidebar-item ${isActive ? 'active' : ''}`}>
+                                Audio
+                            </div>
+                        )}
+                    </NavLink>
+                    <NavLink to="/voiceover">
+                        {({ isActive }) => (
+                            <div className={`sidebar-item ${isActive ? 'active' : ''}`}>
+                                Voiceover
+                            </div>
+                        )}
+                    </NavLink>
+                    <NavLink to="/contact">
+                        {({ isActive }) => (
+                            <div className={`sidebar-item ${isActive ? 'active' : ''}`}>
+                                Contact
+                            </div>
+                        )}
+                    </NavLink>
                 </div>
             </div>
             <div
