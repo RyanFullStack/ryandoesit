@@ -72,13 +72,6 @@ function Sidebar() {
                             </div>
                         )}
                     </NavLink>
-                    <NavLink to="/audio">
-                        {({ isActive }) => (
-                            <div className={`sidebar-item ${isActive ? 'active' : ''}`}>
-                                Audio
-                            </div>
-                        )}
-                    </NavLink>
                     <NavLink to="/voiceover">
                         {({ isActive }) => (
                             <div className={`sidebar-item ${isActive ? 'active' : ''}`}>
