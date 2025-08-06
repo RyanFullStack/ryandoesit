@@ -44,7 +44,7 @@ function Sidebar() {
                             </div>
                         )}
                     </NavLink>
-                    <NavLink to="/games">
+                    {/* <NavLink to="/games">
                         {({ isActive }) => (
                             <div className={`sidebar-item ${isActive ? 'active' : ''}`}>
                                 Games
@@ -85,7 +85,7 @@ function Sidebar() {
                                 Contact
                             </div>
                         )}
-                    </NavLink>
+                    </NavLink> */}
                 </div>
             </div>
             <div

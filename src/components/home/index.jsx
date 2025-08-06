@@ -4,9 +4,9 @@ function Home() {
 
 
     return <div className="home-content">
-        <h2>Welcome!</h2>
-        <p>This site is currently being built. New features and pages are being added.</p>
-        <p>Please check back soon for more!</p>
+        <h2>FOR SALE</h2>
+        <p>This site is available for sale.</p>
+        <p>Please email <a href="mailto:ryan@ryandoesit.com"> Ryan@ryandoesit.com</a> to submit an offer.</p>
     </div>
 }
 
